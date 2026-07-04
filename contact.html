@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Saffron Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Saffron Kitchen</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <a href="contact.html#reserve" class="nav-cta">Reserve a Table</a>
+            <button class="hamburger" id="menuBtn">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <h3>Visit Us</h3>
+                        <p>42 Spice Lane</p>
+                        <p>Connaught Place</p>
+                        <p>New Delhi, 110001</p>
+                    </div>
+                    <div class="contact-block">
+                        <h3>Hours</h3>
+                        <p>Monday — Friday: 11am – 10pm</p>
+                        <p>Saturday — Sunday: 10am – 11pm</p>
+                    </div>
+                    <div class="contact-block">
+                        <h3>Reach Out</h3>
+                        <p>Phone: +91 98765 43210</p>
+                        <p>Email: hello@saffronkitchen.com</p>
+                    </div>
+                    <div class="map-placeholder">
+                        <img src="images/map.jpg" alt="Map showing Saffron Kitchen location">
+                    </div>
+                </div>
+
+                <div class="contact-forms">
+                    <!-- contact form -->
+                    <div class="form-card">
+                        <h2>Send a Message</h2>
+                        <p class="form-sub">Questions, feedback, or catering inquiries.</p>
+                        <div class="form-fields" id="contactFields">
+                            <div class="field">
+                                <label for="contactName">Name</label>
+                                <input type="text" id="contactName" placeholder="Your name">
+                                <span class="err" id="contactNameErr"></span>
+                            </div>
+                            <div class="field">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" placeholder="you@example.com">
+                                <span class="err" id="contactEmailErr"></span>
+                            </div>
+                            <div class="field">
+                                <label for="contactMsg">Message</label>
+                                <textarea id="contactMsg" rows="4" placeholder="How can we help?"></textarea>
+                                <span class="err" id="contactMsgErr"></span>
+                            </div>
+                            <button class="btn btn-primary btn-block" id="contactSendBtn">Send Message</button>
+                        </div>
+                        <div class="form-done" id="contactDone">
+                            <h3>Message sent!</h3>
+                            <p>We'll get back to you within 24 hours.</p>
+                            <button class="btn btn-outline" id="contactAgainBtn">Send Another</button>
+                        </div>
+                    </div>
+
+                    <!-- reservation form -->
+                    <div class="form-card" id="reserve">
+                        <h2>Reserve a Table</h2>
+                        <p class="form-sub">Book ahead and we'll have your table ready.</p>
+                        <div class="form-fields" id="reserveFields">
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="resName">Name</label>
+                                    <input type="text" id="resName" placeholder="Your name">
+                                    <span class="err" id="resNameErr"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="resPhone">Phone</label>
+                                    <input type="tel" id="resPhone" placeholder="+91 98765 43210">
+                                    <span class="err" id="resPhoneErr"></span>
+                                </div>
+                            </div>
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="resDate">Date</label>
+                                    <input type="date" id="resDate">
+                                    <span class="err" id="resDateErr"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="resTime">Time</label>
+                                    <select id="resTime">
+                                        <option value="">Select time</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                    <span class="err" id="resTimeErr"></span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="resGuests">Guests</label>
+                                <select id="resGuests">
+                                    <option value="">How many?</option>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6 people</option>
+                                    <option value="7+">7+ people</option>
+                                </select>
+                                <span class="err" id="resGuestsErr"></span>
+                            </div>
+                            <div class="field">
+                                <label for="resNotes">Special Requests (optional)</label>
+                                <textarea id="resNotes" rows="2" placeholder="Allergies, birthday, high chair..."></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-block" id="reserveBtn">Book Table</button>
+                        </div>
+                        <div class="form-done" id="reserveDone">
+                            <h3>Table booked!</h3>
+                            <p>We'll confirm your reservation by phone shortly.</p>
+                            <button class="btn btn-outline" id="reserveAgainBtn">Book Another</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <span>© 2026 Saffron Kitchen. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

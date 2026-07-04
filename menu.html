@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Saffron Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Saffron Kitchen</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html#reserve" class="nav-cta">Reserve a Table</a>
+            <button class="hamburger" id="menuBtn">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Our Menu</h1>
+        <p>Fresh, authentic, made with love</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <!-- filter buttons -->
+            <div class="menu-filters" id="menuFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="mains">Mains</button>
+                <button class="filter-btn" data-filter="breads">Breads</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <!-- menu items -->
+            <div class="menu-grid" id="menuGrid">
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Samosa</h3>
+                            <span class="menu-price">$6</span>
+                        </div>
+                        <p>Crispy pastry filled with spiced potatoes and peas. Served with mint chutney.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Paneer Tikka</h3>
+                            <span class="menu-price">$13</span>
+                        </div>
+                        <p>Grilled cottage cheese marinated in yogurt and tandoori spices.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Chicken Seekh Kebab</h3>
+                            <span class="menu-price">$12</span>
+                        </div>
+                        <p>Minced chicken skewers with herbs, grilled in the tandoor.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Aloo Tikki Chaat</h3>
+                            <span class="menu-price">$8</span>
+                        </div>
+                        <p>Potato patties topped with yogurt, tamarind, and crunchy sev.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Butter Chicken</h3>
+                            <span class="menu-price">$16</span>
+                        </div>
+                        <p>Tender chicken in a rich, creamy tomato sauce with aromatic spices.</p>
+                        <span class="menu-tag popular">Popular</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Hyderabadi Biryani</h3>
+                            <span class="menu-price">$18</span>
+                        </div>
+                        <p>Fragrant basmati rice layered with spiced lamb and saffron.</p>
+                        <span class="menu-tag popular">Popular</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Dal Makhani</h3>
+                            <span class="menu-price">$12</span>
+                        </div>
+                        <p>Black lentils slow-cooked overnight with butter and cream.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Rogan Josh</h3>
+                            <span class="menu-price">$17</span>
+                        </div>
+                        <p>Slow-braised lamb in a Kashmiri chili and yogurt sauce.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Palak Paneer</h3>
+                            <span class="menu-price">$13</span>
+                        </div>
+                        <p>Cottage cheese cubes in a smooth, spiced spinach sauce.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Garlic Naan</h3>
+                            <span class="menu-price">$4</span>
+                        </div>
+                        <p>Soft tandoor-baked flatbread with fresh garlic and butter.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Laccha Paratha</h3>
+                            <span class="menu-price">$4</span>
+                        </div>
+                        <p>Flaky, layered whole wheat bread from the tandoor.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Stuffed Kulcha</h3>
+                            <span class="menu-price">$5</span>
+                        </div>
+                        <p>Tandoori bread stuffed with spiced potatoes or paneer.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Gulab Jamun</h3>
+                            <span class="menu-price">$6</span>
+                        </div>
+                        <p>Soft milk dumplings soaked in rose-flavored sugar syrup.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Rasmalai</h3>
+                            <span class="menu-price">$7</span>
+                        </div>
+                        <p>Soft cottage cheese patties in sweetened, cardamom-infused milk.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Mango Lassi</h3>
+                            <span class="menu-price">$5</span>
+                        </div>
+                        <p>Chilled yogurt drink blended with fresh mango pulp.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-info">
+                        <div class="menu-item-top">
+                            <h3>Masala Chai</h3>
+                            <span class="menu-price">$3</span>
+                        </div>
+                        <p>Traditional spiced tea brewed with ginger, cardamom, and cinnamon.</p>
+                        <span class="menu-tag veg">Veg</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <span>© 2026 Saffron Kitchen. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
