@@ -108,7 +108,7 @@ button { font-family: inherit; cursor: pointer; }
     min-height: 85vh; display: flex; align-items: center;
     justify-content: center; text-align: center;
     position: relative; overflow: hidden;
-    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    background: url('../images/hero-bg.png') center/cover no-repeat;
     padding: 120px 24px 80px;
 }
 
